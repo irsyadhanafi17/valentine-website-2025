@@ -324,3 +324,36 @@ h2 {
     transform: scale(1.05);
     background: var(--secondary-color);
 } 
+
+/* Sticker Vintage di pojok kiri bawah */
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 120px; /* Atur ukuran stiker di sini */
+    height: 120px;
+    /* Ganti URL di bawah dengan link Catbox stiker pilihanmu */
+    background-image: url('https://files.catbox.moe/lmldhg.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* Biar menyatu dengan tema vintage */
+    pointer-events: none; /* Biar tidak mengganggu klik */
+    z-index: 999;
+}
+
+/* Sticker tambahan di pojok kanan bawah */
+body::before {
+    content: "";
+    position: fixed;
+    bottom: 10px;
+    right: 10px; /* Bedanya di sini pakai right */
+    width: 100px;
+    height: 100px;
+    background-image: url('https://files.catbox.moe/h3t8tw.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 999;
+}
