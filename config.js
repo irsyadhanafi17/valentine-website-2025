@@ -14,7 +14,7 @@ const CONFIG = {
     // Floating emojis that appear in the background
     // Find more emojis at: https://emojipedia.org
     floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis
+        hearts: ['❤️', '💖', '💗'],  // Heart emojis
         bears: ['🧸', '🐻']                       // Cute bear emojis
     },
 
@@ -50,8 +50,8 @@ const CONFIG = {
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yay! I'm so grateful to have you! 🎉✨💝",
-        message: "No matter where the road leads, I promise to be the one who cheers for you the loudest. Let's grow and stay until we're gold! ✨",
-        emojis: "✨🚀🌱💝🏠🤝"  // These will bounce around
+        message: "'No matter where the road leads, I promise to be the one who cheers for you the loudest. Let's grow and stay until we're gold! ✨'",
+        emojis: "🚀🌱🏠"  // These will bounce around
     },
 
     // Color scheme for the website
@@ -69,8 +69,8 @@ const CONFIG = {
     animations: {
         floatDuration: "15s",           // How long it takes hearts to float up (10-20s recommended)
         floatDistance: "50px",          // How far hearts move sideways (30-70px recommended)
-        bounceSpeed: "0.5s",            // Speed of bouncing animations (0.3-0.7s recommended)
-        heartExplosionSize: 1.5         // Size of heart explosion effect (1.2-2.0 recommended)
+        bounceSpeed: "0.2s",            // Speed of bouncing animations (0.3-0.7s recommended)
+        heartExplosionSize: 1.1         // Size of heart explosion effect (1.2-2.0 recommended)
     },
 
     // Background Music (Optional)
