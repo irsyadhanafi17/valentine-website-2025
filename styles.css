@@ -20,20 +20,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, var(--background-color-1), var(--background-color-2));
-    font-family: Arial, sans-serif;
+    /* Efek Vintage: Gabungan tekstur halus dan gradasi pink pastel */
+    background: 
+        /* Tekstur kertas/debu vintage */
+        url('https://www.transparenttextures.com/patterns/dust.png'),
+        linear-gradient(135deg, var(--background-color-1), var(--background-color-2));
+    background-color: var(--background-color-1);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font lebih modern & lembut */
     overflow-x: hidden;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.85); /* Lebih transparan */
+    padding: 2.5rem;
+    border-radius: 30px; /* Lebih bulat agar terlihat 'cute' */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Border tipis transparan */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Shadow lebih halus */
     text-align: center;
     max-width: 600px;
     margin: 20px;
     overflow: visible !important;
+    backdrop-filter: blur(5px); /* Efek kaca (Glassmorphism) */
 }
 
 .floating-elements {
